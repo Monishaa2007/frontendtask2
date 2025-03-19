@@ -1,0 +1,44 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Watchlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Watchlist</h1>
+
+        <!-- Genre Filters -->
+        <div class="filters">
+            <button onclick="filterGenre('all')">All</button>
+            <button onclick="filterGenre('animation')">Animation</button>
+            <button onclick="filterGenre('action')">Action</button>
+            <button onclick="filterGenre('adventure')">Adventure</button>
+            <button onclick="filterGenre('comedy')">Comedy</button>
+            <button onclick="filterGenre('crime')">Crime</button>
+            <button onclick="filterGenre('horror')">Horror</button>
+            <button onclick="filterGenre('fantasy')">Fantasy</button>
+            <button onclick="filterGenre('sci-fi')">Sci-Fi</button>
+            <button onclick="filterGenre('musical')">Musical</button>
+            <button onclick="filterGenre('war')">War</button>
+            <button onclick="filterGenre('romance')">Romance</button>
+            <button onclick="filterGenre('thriller')">Thriller</button>
+            <button onclick="filterGenre('sports')">Sports</button>
+            <button onclick="filterGenre('historical drama')">Historical Drama</button>
+        </div>
+
+        <!-- Movie List -->
+        <div id="movie-list" class="movie-list"></div>
+
+        <!-- Watchlist Section -->
+        <div class="watchlist">
+            <h2>Your Watchlist</h2>
+            <ul id="watchlist-ul"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
